@@ -1,0 +1,95 @@
+*{
+	box-sixing: border-box;
+	-moz-box-sizing: border-box;
+	font-family: Roboto;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+}
+
+body {
+	margin: 0;
+	padding: 10;
+}
+#TOOLIT{
+    float:left;
+    margin 10px;
+}
+
+/*툴바 색깔*/
+#toolbar {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	background-color: #94B4B3;
+	color: white;
+}
+/*사이즈 크기 수정*/
+#size {
+	float: left;
+	margin: 10px;
+}
+/*박스 안의 색깔*/
+#save, #clear, #decSize, #incSize {
+	background-color: #43A49D;
+	display: inline-block;
+	text-align: center;
+	padding: 5px;
+	border-radius: 5px;
+}
+/*감소와 증가 패딩*/
+#decSize, #incSize {
+	padding: 5px 10px;
+}
+
+/*  화면 크기 */
+#valSize {
+	padding: 5px 8px;
+	border: 1px solid #555;
+	border-radius: 5px;
+}
+
+#colors {
+	float: right;
+	margin: 10px 10px 0 0;
+}
+
+#canvas {
+	display: block;
+	cursor: pointer;
+	margin: 0 auto;
+}
+
+#canvas:active {
+	cursor: crosshair;
+}
+
+/*  색깔 창 크기 */
+.swatch {
+	width: 30px;
+	height: 30px;
+	border-radius: 15px;
+	display: inline-block;
+	margin-left: 10px;
+}
+
+/* 활성화되는 색깔 */
+.swatch.active {
+	border: 2px solid white;
+}
+
+/* 공간 마진 부여 */
+#save, #clear {
+	margin: 10px 2px;
+}
+
+/* 뜨는 애니매이션 */
+#decSize:hover,
+#incSize:hover,
+#save:hover,
+#clear:hover,
+.swatch:hover {
+	opacity: .5;
+	cursor: pointer;
+}
